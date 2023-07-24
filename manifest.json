@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Logo",
+  "version": "1.0",
+  "description": "Back to basic",
+  "action": {
+    "default_icon": {
+      "48": "Logo_of_Twitter_48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", "https://x.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "48": "Logo_of_Twitter_48.png"
+  }
+}
